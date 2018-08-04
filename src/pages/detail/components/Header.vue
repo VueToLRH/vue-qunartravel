@@ -57,6 +57,7 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   .header-abs
+    z-index: 2
     position: absolute
     left: .2rem
     top: .2rem
