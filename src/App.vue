@@ -6,7 +6,7 @@
     <!-- 解决方法：可以使用 keep-alive 多出的一个生命周期函数 —— activated（keep-alive组件激活时调用。）
                   通过 activated 的生命周期函数，判断页面显示的城市是否与上次页面显示的城市是否是相同的，不相同则进行请求。
     -->
-    <keep-alive>
+    <keep-alive exclude="Detail">
       <router-view/>
     </keep-alive>
   </div>
