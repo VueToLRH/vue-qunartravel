@@ -12,6 +12,8 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+      // component: () => import('@/pages/home/Home') 异步组件加载，
+      // 只加载当前页面的js，如果当项目小的时候咋不需要使用异步组件实现按需加载，超过1M的项目组件则可以使用异步组件加载
     },
     {
       path: '/city',
