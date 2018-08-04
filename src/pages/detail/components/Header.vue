@@ -44,7 +44,12 @@ export default {
     }
   },
   activated () {
+    // 因为 scroll 事件绑定在 window 上，所以对其它页面有影响，需要对全局事件进行解绑
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    // 全局事件解绑
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
