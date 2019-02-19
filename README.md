@@ -21,6 +21,7 @@
 + fastclick：用于移动端某些机型点击事件，3秒钟的延迟问题
 + vue-awesome-swiper@2.6.7：用于制作轮播图效果
 + better-scroll: 解决移动端（已支持 PC）各种滚动场景需求的插件
++ 图片占位，可参考 [巧用margin/padding的百分比值实现高度自适应（多用于占位，避免闪烁）](https://segmentfault.com/a/1190000004231995)
 
 ## 3. 项目展示
 

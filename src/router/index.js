@@ -26,7 +26,9 @@ export default new Router({
       component: Detail
     }
   ],
+  // scrollBehavior 方法接收 to 和 from 路由对象。第三个参数 savedPosition 当且仅当 popstate 导航 (通过浏览器的 前进/后退 按钮触发) 时才可用。
   scrollBehavior (to, from, savedPosition) {
+    console.log('savedPosition', savedPosition)
     return { x: 0, y: 0 }
   }
 })
